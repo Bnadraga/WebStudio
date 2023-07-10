@@ -8,14 +8,26 @@
     --logo-color: #000;
     --secondary-background-color: #2F303A;
 }
+ul{
+    list-style: none;
+}
 body{
     padding: 0 215px;
     color: var(--primary-text-color);
     background-color: var(--primary-background-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
 }
 /* header */
 .logo{
     color: var(--logo-color);
+    font-family: 'Raleway';
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+    text-decoration: none;
 }
 .blue{
     color: var(--background-button-color);
@@ -23,29 +35,64 @@ body{
 .site-list{
     color: var(--title-text-color);
 }
+.site-nav{
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+}
+.site-link{
+    text-decoration: none;
+    color: var(--title-text-color);
+}
+.site-link:hover,
+.site-link:focus{
+    color: var(--background-button-color);
+}
 /* post */
 .post{
     background-color: var(--secondary-background-color);
 }
 .post-title{
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 60px;
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
     color: var(--secondary-text-color);
+    text-align: center;
 }
 .post-button{
     color: var(--secondary-text-color);
     background-color: var(--background-button-color);
     cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+    border: none;
+    padding: 10px 32px;
+    margin: 0 auto;
 }
 /* benefits */
 .benefits-name{
     color: var(--title-text-color);
-    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
 }
 .benefits-text{
-    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
 }
 /* activity */
 .activity-title{
     color: var(--title-text-color);
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+    text-align: center;
 }
 /* team */
 .team{
@@ -53,9 +100,29 @@ body{
 }
 .team-title{
     color: var(--title-text-color);
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+    text-align: center; 
 }
 .team-name{
     color: var(--title-text-color);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.48px;
+    text-align: center; 
+}
+.team-position{
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.48px;
+    text-align: center; 
+}
+.team-card{
+    width: 270px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    padding-bottom: 30px;
 }
 /* footer */
 .page-footer{
@@ -63,12 +130,24 @@ body{
 }
 .address{
     color: var(--secondary-text-color);
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    text-decoration: none;
+    cursor: pointer;
 }
-.address-text{
+.blac{
     color: var(--secondary-text-color);
+}
+.address-h{
+    color: rgba(255, 255, 255, 0.60);
+    cursor: pointer;
+    text-decoration: none;
 }
 .email{
-    color: var(--secondary-text-color);
+    color: rgba(255, 255, 255, 0.60);
+    cursor: pointer;
+    text-decoration: none;
 }
 /* portfolio */
 .portfolio-title{
@@ -77,8 +156,27 @@ body{
 .portfolio-button{
     background-color: var(--background-team-color);
     cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.48px;
+    width: auto;
+    border-radius: 4px;
+    height: 38px;
 }
 .project-name{
     color: var(--title-text-color);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 1.08px;
 }
+.addition{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.48px;
+}
+
 
