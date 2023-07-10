@@ -178,5 +178,10 @@ body{
     line-height: 30px;
     letter-spacing: 0.48px;
 }
+.project-list-s{
+    border: 1px solid #EEE;
+    width: 370px;
+    height: 404px;
+}
 
 
