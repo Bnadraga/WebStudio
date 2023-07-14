@@ -76,7 +76,7 @@ body{
     margin: 0 auto;
 }
 /* benefits */
-.benefits-name{
+.benefits-block-name{
     color: var(--title-text-color);
     font-weight: 700;
     letter-spacing: 0.42px;
@@ -118,7 +118,7 @@ body{
     letter-spacing: 0.48px;
     text-align: center; 
 }
-.team-card{
+.team-list-card{
     width: 270px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
@@ -136,7 +136,7 @@ body{
     text-decoration: none;
     cursor: pointer;
 }
-.blac{
+.white{
     color: var(--secondary-text-color);
 }
 .address-h{
@@ -165,6 +165,10 @@ body{
     border-radius: 4px;
     height: 38px;
 }
+.portfolio-button:hover,
+.portfolio-button:focus{
+    background-color: var(--background-button-color);
+}
 .project-name{
     color: var(--title-text-color);
     font-size: 18px;
@@ -178,7 +182,7 @@ body{
     line-height: 30px;
     letter-spacing: 0.48px;
 }
-.project-list-s{
+.project-list-information{
     border: 1px solid #EEE;
     width: 370px;
     height: 404px;
