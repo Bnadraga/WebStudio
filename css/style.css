@@ -8,14 +8,6 @@
     --logo-color: #000;
     --secondary-background-color: #2F303A;
 }
-*,
-::after,
-::before {
-  box-sizing: border-box;
-}
-img{
-    display: block;
-}
 body{
     padding: 0 215px;
     color: var(--primary-text-color);
@@ -154,6 +146,7 @@ body{
     line-height: 24px;
     letter-spacing: 0.42px;
     cursor: pointer;
+    display: block;
 }
 .white{
     color: var(--secondary-text-color);
@@ -161,11 +154,13 @@ body{
 .address-h{
     color: rgba(255, 255, 255, 0.60);
     cursor: pointer;
+    display: block;
 }
 .email{
     color: rgba(255, 255, 255, 0.60);
     cursor: pointer;
 }
+
 /* portfolio */
 .portfolio-title{
     color: var(--title-text-color);
