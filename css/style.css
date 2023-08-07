@@ -20,11 +20,15 @@ body{
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    border: 2px solid red;
 }
 /* header */
 .header{
     margin-bottom: 28px;
+}
+.header-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .logo{
     color: var(--logo-color);
@@ -33,19 +37,41 @@ body{
     font-weight: 700;
     letter-spacing: 0.78px;
 }
+.contact-list{
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    display: flex;
+}
+.site-number{
+    padding-left: 50px;
+    color: var(--primary-text-color);
+}
+.site-number:hover,
+.site-number:focus{
+    color: var(--background-button-color);
+}
+.site-email{
+    color: var(--primary-text-color);
+}
+.site-email:hover,
+.site-email:focus{
+    color: var(--background-button-color);
+}
 .blue{
     color: var(--background-button-color);
 }
 .site-list{
     color: var(--title-text-color);
+    display: flex;
+    margin-left: -200px;
 }
-.site-nav{
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.28px;
+.site-list-item:not(:last-child){
+    margin-right: 50px;
 }
 .site-link{
     color: var(--title-text-color);
+    font-weight: 500;
+    letter-spacing: 0.28px;
 }
 .site-link:hover,
 .site-link:focus{
@@ -55,6 +81,7 @@ body{
 .post{
     background-color: var(--secondary-background-color);
     margin-bottom: 69px;
+    height: 600px;
 }
 .post-title{
     font-size: 44px;
@@ -82,10 +109,21 @@ body{
 .benefits{
     margin-bottom: 91px;
 }
+.benefits-block{
+    width: 270px;
+}
+.benefits-block:not(:last-child){
+    margin-right: 30px;
+}
+.benefits-list{
+    display: flex;
+    align-items: flex-start;
+}
 .benefits-block-name{
     color: var(--title-text-color);
     font-weight: 700;
     letter-spacing: 0.42px;
+    padding-bottom: 10px;
 }
 .benefits-text{
     font-weight: 400;
@@ -104,11 +142,18 @@ body{
     text-align: center;
     margin-bottom: 50px;
 }
+.activity-list{
+    display: flex;
+    justify-content: space-between;
+}
 /* team */
 .team{
     background-color: var(--background-team-color);
     padding-top: 94px;
     padding-bottom: 94px;
+}
+.team-list{
+    display: flex;
 }
 .team-title{
     color: var(--title-text-color);
@@ -116,25 +161,31 @@ body{
     font-weight: 700;
     letter-spacing: 1.08px;
     text-align: center;
+    margin-bottom: 50px;
 }
 .team-name{
     color: var(--title-text-color);
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.48px;
-    text-align: center; 
+    text-align: center;
+    padding-top: 30px;
 }
 .team-position{
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.48px;
-    text-align: center; 
+    text-align: center;
+    padding-top: 10px;
 }
 .team-list-card{
     width: 270px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-    padding-bottom: 30px;
+    height: 368px;
+}
+.team-list-card:not(:last-child){
+    margin-right: 30px;
 }
 /* footer */
 .page-footer{
@@ -146,25 +197,33 @@ body{
     line-height: 24px;
     letter-spacing: 0.42px;
     cursor: pointer;
-    display: block;
+    padding-top: 20px;
 }
 .white{
     color: var(--secondary-text-color);
 }
-.address-h{
-    color: rgba(255, 255, 255, 0.60);
-    cursor: pointer;
-    display: block;
-}
 .email{
     color: rgba(255, 255, 255, 0.60);
     cursor: pointer;
+    padding-top: 9px;
 }
-
+.number{
+    color: rgba(255, 255, 255, 0.60);
+    cursor: pointer;
+    padding-top: 9px;
+}
+.footer-information{
+    display: flex;
+    flex-direction: column;
+}
+.logo-footer{
+    color: var(--logo-color);
+    font-family: 'Raleway';
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+}
 /* portfolio */
-.portfolio-title{
-    color: var(--title-text-color);
-}
 .portfolio-button{
     background-color: var(--background-team-color);
     cursor: pointer;
@@ -181,6 +240,16 @@ body{
 .portfolio-button:hover,
 .portfolio-button:focus{
     background-color: var(--background-button-color);
+    color: var(--secondary-text-color);
+}
+.portfolio-list-button{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 94px;
+}
+.li-portfolio-button:not(:last-child){
+    margin-left: 9px;
 }
 .project-name{
     color: var(--title-text-color);
@@ -199,6 +268,11 @@ body{
     border: 1px solid #EEE;
     width: 370px;
     height: 404px;
+    margin-left: 30px;
+    margin-bottom: 30px;
 }
-
-
+.project-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+}
