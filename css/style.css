@@ -195,7 +195,7 @@ body{
 }
 /* client */
 .client{
-    margin-top: 202px;
+    margin-top: 94px;
 }
 .client-title{
     color: var(--title-text-color);
@@ -203,10 +203,25 @@ body{
     font-weight: 700;
     letter-spacing: 1.08px;
     text-align: center;
+    margin-bottom: 50px;
+}
+.client-list{
+    display: flex;
+    justify-content: space-between;
+}
+.client-list-wrap{
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+.client-list-wrap:not(:last-child){
+    margin-right: 30px;
 }
 /* footer */
 .page-footer{
     background-color: var(--secondary-background-color);
+    margin-top: 94px;
 }
 .address{
     color: var(--secondary-text-color);
