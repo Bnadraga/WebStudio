@@ -36,11 +36,13 @@ body{
     font-size: 26px;
     font-weight: 700;
     letter-spacing: 0.78px;
+    padding-top: 24px;
 }
 .contact-list{
     font-weight: 500;
     letter-spacing: 0.28px;
     display: flex;
+    padding-top: 32px;
 }
 .site-number{
     padding-left: 50px;
@@ -64,6 +66,7 @@ body{
     color: var(--title-text-color);
     display: flex;
     margin-left: -200px;
+    padding-top: 32px;
 }
 .site-list-item:not(:last-child){
     margin-right: 50px;
