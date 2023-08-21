@@ -282,9 +282,10 @@ body{
     justify-content: center;
     margin-bottom: 50px;
     margin-top: 94px;
+    gap: 9px;
 }
-.li-portfolio-button:not(:last-child){
-    margin-left: 9px;
+.li-portfolio-button:last-child{
+    width: 73px;
 }
 .project-name{
     color: var(--title-text-color);
