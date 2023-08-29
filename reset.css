@@ -21,11 +21,11 @@ a{
     text-decoration: none;
     cursor: pointer;
 }
-*,
+/* *,
 ::after,
 ::before {
   box-sizing: border-box;
-}
+} */
 img{
     display: block;
 }

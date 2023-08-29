@@ -113,7 +113,19 @@ body{
     margin-bottom: 91px;
 }
 .benefits-block{
-    width: 270px;
+    width: 270;
+    height: 120px;
+}
+.benefits-block::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 120px;
+    background-color: var(--background-team-color);
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: 70px;
+    background-position: center;
 }
 .benefits-block:not(:last-child){
     margin-right: 30px;
