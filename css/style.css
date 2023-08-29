@@ -110,7 +110,7 @@ body{
 }
 /* benefits */
 .benefits{
-    margin-bottom: 91px;
+    margin-bottom: 182px;
 }
 .benefits-block{
     width: 270;
@@ -122,10 +122,19 @@ body{
     width: 100%;
     height: 120px;
     background-color: var(--background-team-color);
-    background-image: url();
+    background-image: url(../img/vector.png);
     background-repeat: no-repeat;
     background-size: 70px;
     background-position: center;
+}
+.benefits-block:nth-child(2)::before{
+    background-image: url(../img/clock.png);
+}
+.benefits-block:nth-child(3)::before{
+    background-image: url(../img/diagram.png);
+}
+.benefits-block:nth-child(4)::before{
+    background-image: url(../img/astronaut.png);
 }
 .benefits-block:not(:last-child){
     margin-right: 30px;
@@ -141,9 +150,6 @@ body{
     padding-bottom: 10px;
 }
 .benefits-list-div{
-    width: 270px;
-    height: 120px;
-    background-color: var(--background-team-color);
     margin-bottom: 30px;
 }
 .benefits-text{
