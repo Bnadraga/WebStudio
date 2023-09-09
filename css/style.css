@@ -85,6 +85,11 @@ body{
     background-color: var(--secondary-background-color);
     margin-bottom: 69px;
     height: 600px;
+    max-width: 1600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../img/img-wrap.png);
+    background-color: #232323;
+    background-size: cover;
+    background-position: center;
 }
 .post-title{
     font-size: 44px;
@@ -94,18 +99,24 @@ body{
     text-transform: uppercase;
     color: var(--secondary-text-color);
     text-align: center;
+    width: 696px;
+    padding-bottom: 30px;
+    padding-top: 200px;
+    margin: 0 auto;
+}
+.div-button{
+    margin-left: 480px;
 }
 .post-button{
     color: var(--secondary-text-color);
     background-color: var(--background-button-color);
     cursor: pointer;
+    border: none;
     border-radius: 4px;
     font-size: 16px;
     font-weight: 700;
     line-height: 30px;
     letter-spacing: 0.96px;
-    padding: 10px 32px;
-    margin: 0 auto;
     padding: 10px 32px;
 }
 /* benefits */
@@ -212,31 +223,6 @@ body{
     border-radius: 4px;
 }
 .team-list-card:not(:last-child){
-    margin-right: 30px;
-}
-/* client */
-.client{
-    margin-top: 94px;
-}
-.client-title{
-    color: var(--title-text-color);
-    font-size: 36px;
-    font-weight: 700;
-    letter-spacing: 1.08px;
-    text-align: center;
-    margin-bottom: 50px;
-}
-.client-list{
-    display: flex;
-    justify-content: space-between;
-}
-.client-list-wrap{
-    width: 170px;
-    height: 92px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-}
-.client-list-wrap:not(:last-child){
     margin-right: 30px;
 }
 /* footer */
