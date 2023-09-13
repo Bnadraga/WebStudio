@@ -29,6 +29,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 24px;
 }
 .logo{
     color: var(--logo-color);
@@ -36,13 +37,11 @@ body{
     font-size: 26px;
     font-weight: 700;
     letter-spacing: 0.78px;
-    padding-top: 24px;
 }
 .contact-list{
     font-weight: 500;
     letter-spacing: 0.28px;
     display: flex;
-    padding-top: 32px;
 }
 .site-number{
     padding-left: 50px;
@@ -66,7 +65,6 @@ body{
     color: var(--title-text-color);
     display: flex;
     margin-left: -200px;
-    padding-top: 32px;
 }
 .site-list-item:not(:last-child){
     margin-right: 50px;
@@ -90,6 +88,11 @@ body{
     background-color: #232323;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 .post-title{
     font-size: 44px;
@@ -100,12 +103,7 @@ body{
     color: var(--secondary-text-color);
     text-align: center;
     width: 696px;
-    padding-bottom: 30px;
-    padding-top: 200px;
-    margin: 0 auto;
-}
-.div-button{
-    margin-left: 480px;
+    margin-bottom: 30px;
 }
 .post-button{
     color: var(--secondary-text-color);
@@ -228,9 +226,9 @@ body{
 /* footer */
 .page-footer{
     background-color: var(--secondary-background-color);
-    margin-top: 94px;
     padding-top: 60px;
     padding-bottom: 60px;
+    width: 100%;
 }
 .address{
     color: var(--secondary-text-color);
@@ -321,4 +319,5 @@ body{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    margin-bottom: 30px;
 }
