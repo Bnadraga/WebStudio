@@ -27,10 +27,26 @@ body{
 }
 .icon-email{
     margin-right: 10px;
+    fill: var(--primary-text-color);
+    text-decoration: none;
 }
 .icon-phone{
     margin-left: 30px;
     margin-right: 10px;
+    text-decoration: none;
+}
+.contact-item{
+    display: flex;
+    align-items: center;
+}
+.contact-list a:hover{
+    fill: var(--background-button-color);
+}
+a:hover .icon-email{
+    fill: var(--background-button-color);
+}
+a:hover .icon-phone{
+    fill: var(--background-button-color);
 }
 .header-wrapper{
     display: flex;
@@ -232,17 +248,26 @@ body{
 }
 .icon-instagram{
     margin-right: 34px;
+    fill: var(--primary-text-color);
 }
 .icon-twitter{
     margin-right: 34px;
+    fill: var(--primary-text-color);
 }
 .icon-facebook{
     margin-right: 34px;
+    fill: var(--primary-text-color);
+}
+.icon-linkedin{
+    fill: var(--primary-text-color);
+}
+.team-svg:hover{
+    fill: var(--secondary-text-color);
+    background-color: var(--background-button-color);
 }
 .team-list-card:not(:last-child){
     margin-right: 30px;
 }
-
 /* client */
 .client{
     margin: 94px 0;
@@ -263,6 +288,15 @@ body{
 .client-wrapper{
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+}
+.client-list div:hover{
+    color: var(--background-button-color);
+}
+div:hover .client-svg{
+    fill: var(--background-button-color);
+}
+.client-svg{
+    fill: var(--primary-text-color);
 }
 .client-wrapper:hover{
     border: 1px solid var(--background-button-color);
@@ -287,7 +321,6 @@ body{
 }
 .white{
     color: var(--secondary-text-color);
-
 }
 .email{
     color: rgba(255, 255, 255, 0.60);
@@ -295,7 +328,7 @@ body{
     padding-top: 9px;
 }
 .number{
-    color: rgba(255, 255, 255, 0.60);
+    color: #ffffff99;
     cursor: pointer;
     padding-top: 9px;
 }
@@ -303,13 +336,37 @@ body{
     display: flex;
     flex-direction: column;
 }
+.footer-social-title{
+    color: var(--secondary-text-color);
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+.footer-social{
+    margin-left: 70px;
+    margin-top: -30px;
+}
+.footer-svg{
+    fill: var(--secondary-text-color);
+    padding: 6px;
+    background-color: rgba(255, 255, 255, 0.10);
+    border-radius: 100%;
+}
+.footer-svg:hover{
+    background-color: var(--background-button-color);
+}
+.footer-svg:not(:last-child)
 .logo-footer{
     color: var(--logo-color);
     font-family: 'Raleway';
     font-size: 26px;
     font-weight: 700;
     letter-spacing: 0.78px;
-    padding-top: 60px;
+}
+.footer-wrapper{
+    display: flex;
+    align-items: center;
 }
 /* portfolio */
 .portfolio-button{

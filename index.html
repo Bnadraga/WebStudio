@@ -30,17 +30,19 @@
                 </ul>
             </nav>
             <ul class="contact-list">
-                <li>
+                <li class="contact-item">
+                    <a class="site-email"href="mailto:info@devstudio.com">
                     <svg class="icon-email" width="16" height="12">
                         <use href="/img/symbol-defs.svg#icon-email"></use>
                     </svg>
-                    <a class="site-email"href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    info@devstudio.com</a>
                 </li>
-                <li>
+                <li class="contact-item">
+                    <a class="site-number"href="tel:+38 096 111 11 11">
                     <svg class="icon-phone" width="10" height="16">
                         <use href="/img/symbol-defs.svg#icon-phone"></use>
                     </svg>
-                    <a class="site-number"href="tel:+38 096 111 11 11">+38 096 111 11 11</a>
+                    +38 096 111 11 11</a>
                 </li>
             </ul>
         </div>
@@ -96,16 +98,16 @@
                             <h4 class="team-name">Ігор Дем'яненко</h4>
                             <p class="team-position">Product Designer</p>
                             <div class="team-social">
-                                <svg class="icon-instagram" width="20" height="20"> 
+                                <svg class="icon-instagram team-svg" width="20" height="20"> 
                                     <use href="../img/symbol-defs.svg#icon-instagram"></use>
                                 </svg>
-                                <svg class="icon-twitter" width="20" height="20"> 
+                                <svg class="icon-twitter team-svg" width="20" height="20"> 
                                     <use href="../img/symbol-defs.svg#icon-twitter"></use>
                                 </svg>
-                                <svg class="icon-facebook" width="20" height="20"> 
+                                <svg class="icon-facebook team-svg" width="20" height="20"> 
                                     <use href="../img/symbol-defs.svg#icon-facebook"></use>
                                 </svg>
-                                <svg class="icon-linkedin" width="20" height="20"> 
+                                <svg class="icon-linkedin team-svg" width="20" height="20"> 
                                     <use href="../img/symbol-defs.svg#icon-linkedin"></use>
                                 </svg>
                             </div>
@@ -115,16 +117,16 @@
                             <h4 class="team-name">Ольга Рєпіна</h4>
                             <p class="team-position">Frontend Developer</p>
                             <div class="team-social">
-                                <svg class="icon-instagram" width="20" height="20"> 
+                                <svg class="icon-instagram team-svg" width="20" height="20"> 
                                     <use href="../img/symbol-defs.svg#icon-instagram"></use>
                                 </svg>
-                                <svg class="icon-twitter" width="20" height="20"> 
+                                <svg class="icon-twitter team-svg" width="20" height="20"> 
                                     <use href="../img/symbol-defs.svg#icon-twitter"></use>
                                 </svg>
-                                <svg class="icon-facebook" width="20" height="20"> 
+                                <svg class="icon-facebook team-svg" width="20" height="20"> 
                                     <use href="../img/symbol-defs.svg#icon-facebook"></use>
                                 </svg>
-                                <svg class="icon-linkedin" width="20" height="20"> 
+                                <svg class="icon-linkedin team-svg" width="20" height="20"> 
                                     <use href="../img/symbol-defs.svg#icon-linkedin"></use>
                                 </svg>
                             </div>
@@ -134,16 +136,16 @@
                             <h4 class="team-name">Микола Тарасов</h4>
                             <p class="team-position">Marketing</p>
                             <div class="team-social">
-                                <svg class="icon-instagram" width="20" height="20"> 
+                                <svg class="icon-instagram team-svg" width="20" height="20"> 
                                     <use href="../img/symbol-defs.svg#icon-instagram"></use>
                                 </svg>
-                                <svg class="icon-twitter" width="20" height="20"> 
+                                <svg class="icon-twitter team-svg" width="20" height="20"> 
                                     <use href="../img/symbol-defs.svg#icon-twitter"></use>
                                 </svg>
-                                <svg class="icon-facebook" width="20" height="20"> 
+                                <svg class="icon-facebook team-svg" width="20" height="20"> 
                                     <use href="../img/symbol-defs.svg#icon-facebook"></use>
                                 </svg>
-                                <svg class="icon-linkedin" width="20" height="20"> 
+                                <svg class="icon-linkedin team-svg" width="20" height="20"> 
                                     <use href="../img/symbol-defs.svg#icon-linkedin"></use>
                                 </svg>
                             </div>
@@ -153,16 +155,16 @@
                             <h4 class="team-name">Михайло Єрмаков</h4>
                             <p class="team-position">UI Designer</p>
                             <div class="team-social">
-                                <svg class="icon-instagram" width="20" height="20"> 
+                                <svg class="icon-instagram team-svg" width="20" height="20"> 
                                     <use href="../img/symbol-defs.svg#icon-instagram"></use>
                                 </svg>
-                                <svg class="icon-twitter" width="20" height="20"> 
+                                <svg class="icon-twitter team-svg" width="20" height="20"> 
                                     <use href="../img/symbol-defs.svg#icon-twitter"></use>
                                 </svg>
-                                <svg class="icon-facebook" width="20" height="20"> 
+                                <svg class="icon-facebook team-svg" width="20" height="20"> 
                                     <use href="../img/symbol-defs.svg#icon-facebook"></use>
                                 </svg>
-                                <svg class="icon-linkedin" width="20" height="20"> 
+                                <svg class="icon-linkedin team-svg" width="20" height="20"> 
                                     <use href="../img/symbol-defs.svg#icon-linkedin"></use>
                                 </svg>
                             </div>
@@ -218,12 +220,29 @@
                 </ul>
             </section>
     </main>
-    <footer class="page-footer container">
-        <a class="logo-footer" href="./index.html"><span class="blue">Web</span><span class="white">Studio</span></a>
-        <div class="footer-information">
-            <a class="address" href="#">м. Київ, пр-т Лесі Українки, 26</a>
-            <a class="email" href="#">info@devstudio.com</a>
-            <a class="number" href="#">+38 096 111 11 11</a>
+    <footer class="page-footer container">        
+        <div class="footer-wrapper">
+            <div class="footer-information">
+                <a class="logo-footer" href="./index.html"><span class="blue">Web</span><span class="white">Studio</span></a>
+                <a class="address" href="#">м. Київ, пр-т Лесі Українки, 26</a>
+                <a class="email" href="#">info@devstudio.com</a>
+                <a class="number" href="#">+38 096 111 11 11</a>
+            </div>
+            <div class="footer-social">
+                <h4 class="footer-social-title">приєднуйтесь</h4>
+                <svg class="footer-instagram footer-svg" width="30" height="30"> 
+                    <use href="../img/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+                <svg class="footer-twitter footer-svg" width="30" height="30"> 
+                    <use href="../img/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+                <svg class="footer-facebook footer-svg" width="30" height="30"> 
+                    <use href="../img/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+                <svg class="footer-linkedin footer-svg" width="30" height="30"> 
+                    <use href="../img/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+            </div>
         </div>
     </footer>
 </body>
