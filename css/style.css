@@ -39,7 +39,10 @@ body{
     display: flex;
     align-items: center;
 }
-.contact-list a:hover{
+.contact-list .icon-email:hover{
+    fill: var(--background-button-color);
+}
+.contact-list .icon-phone:hover{
     fill: var(--background-button-color);
 }
 a:hover .icon-email{
@@ -68,6 +71,7 @@ a:hover .icon-phone{
 }
 .site-number{
     color: var(--primary-text-color);
+    margin-top: -2px;
 }
 .site-number:hover,
 .site-number:focus{
@@ -246,27 +250,22 @@ a:hover .icon-phone{
     justify-content: center;
     margin-bottom: 42px;
 }
-.icon-instagram{
-    margin-right: 34px;
-    fill: var(--primary-text-color);
-}
-.icon-twitter{
-    margin-right: 34px;
-    fill: var(--primary-text-color);
-}
-.icon-facebook{
-    margin-right: 34px;
-    fill: var(--primary-text-color);
-}
-.icon-linkedin{
-    fill: var(--primary-text-color);
-}
-.team-svg:hover{
-    fill: var(--secondary-text-color);
-    background-color: var(--background-button-color);
-}
 .team-list-card:not(:last-child){
     margin-right: 30px;
+}
+.team-social-a{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: var(--primary-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team-social-a:hover,
+.team-social-a:focus{
+    background-color: var(--background-button-color);
+    fill: var(--primary-background-color);
 }
 /* client */
 .client{
@@ -345,18 +344,29 @@ div:hover .client-svg{
 }
 .footer-social{
     margin-left: 70px;
-    margin-top: -30px;
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+}
+.footer-social-list{
+    display: flex;
 }
 .footer-svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     fill: var(--secondary-text-color);
-    padding: 6px;
     background-color: rgba(255, 255, 255, 0.10);
-    border-radius: 100%;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+.footer-social-item:not(:last-child){
+    margin-right: 10px;
 }
 .footer-svg:hover{
     background-color: var(--background-button-color);
 }
-.footer-svg:not(:last-child)
 .logo-footer{
     color: var(--logo-color);
     font-family: 'Raleway';
