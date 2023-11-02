@@ -142,6 +142,14 @@ a:hover .icon-phone{
     letter-spacing: 0.96px;
     padding: 10px 32px;
 }
+.div-button{
+    display: flex;
+    justify-content: center;
+}
+.post-title-wrap{
+    display: flex;
+    justify-content: center;
+}
 /* benefits */
 .benefits{
     margin-bottom: 182px;
@@ -160,6 +168,7 @@ a:hover .icon-phone{
     background-repeat: no-repeat;
     background-size: 70px;
     background-position: center;
+    border-radius: 4px;
 }
 .benefits-block:nth-child(2)::before{
     background-image: url(../img/clock.png);
@@ -244,6 +253,7 @@ a:hover .icon-phone{
     width: 270px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    background-color: var(--secondary-text-color);
 }
 .team-social{
     display: flex;
@@ -287,11 +297,28 @@ a:hover .icon-phone{
 .client-wrapper{
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    height: 92px;
+    cursor: pointer;
 }
-.client-list div:hover{
+.client-list .client-wrapper:hover{
     color: var(--background-button-color);
 }
-div:hover .client-svg{
+.client-wrapper:hover .icon-client_one{
+    fill: var(--background-button-color);
+}
+.client-wrapper:hover .icon-client_two{
+    fill: var(--background-button-color);
+}
+.client-wrapper:hover .icon-client_three{
+    fill: var(--background-button-color);
+}
+.client-wrapper:hover .icon-client_four{
+    fill: var(--background-button-color);
+}
+.client-wrapper:hover .icon-client_five{
+    fill: var(--background-button-color);
+}
+.client-wrapper:hover .icon-client_six{
     fill: var(--background-button-color);
 }
 .client-svg{
