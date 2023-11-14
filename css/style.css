@@ -185,9 +185,6 @@ a:hover .icon-phone{
     margin-left: 510px;
     margin-right: 8px;
     box-sizing: border-box;
-    background-image: url(/img/modal-close.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 .modal-icon{
     fill: var(--primary-text-color);
@@ -221,7 +218,7 @@ a:hover .icon-phone{
     flex-direction: column;
 }
 .modal-form-icon{
-    fill: var(--logo-color);
+    fill: var(--primary-text-color);
     position: absolute;
 }
 .modal-form-label{
