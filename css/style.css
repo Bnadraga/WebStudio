@@ -186,16 +186,16 @@ a:hover .icon-phone{
     margin-right: 8px;
     box-sizing: border-box;
 }
-.modal-icon{
+.modal-icon-close{
+    display: flex;
+    align-items: center;
+    padding-right: 3px;
+}
+.modal-form-icon{
     fill: var(--primary-text-color);
     position: absolute;
     top: 27px;
-    left: 8px;
-}
-.form-input .modal-icon:hover,
-.form-input .modal-icon:focus{
-    fill: var(--background-button-color);
-    border: var(--background-button-color);
+    left: 10px;
 }
 .modal-form-title{
     color: var(--title-text-color);
@@ -219,7 +219,6 @@ a:hover .icon-phone{
 }
 .modal-form-icon{
     fill: var(--primary-text-color);
-    position: absolute;
 }
 .modal-form-label{
     display: flex;
