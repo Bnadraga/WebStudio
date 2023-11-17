@@ -174,22 +174,25 @@ a:hover .icon-phone{
     border-radius: 4px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
-.modal-close-button{
-    background-color: var(--primary-background-color);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
+.modal-close-button {
+    margin-top: 8px;
+    margin-left: 490px;
     width: 30px;
     height: 30px;
-    cursor: pointer;
-    margin-top: 8px;
-    margin-left: 510px;
-    margin-right: 8px;
+    background-color: var(--primary-background-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
-}
-.modal-icon-close{
+    cursor: pointer;
+    border-radius: 50%;
+    background-image: url(./images/icons.svg#icon-close);
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     align-items: center;
-    padding-right: 3px;
+}
+.modal-icon {
+    fill: currentColor;
+    align-items: center;
 }
 .modal-form-icon{
     fill: var(--primary-text-color);
@@ -206,8 +209,15 @@ a:hover .icon-phone{
     display: flex;
     justify-content: center;
 }
+.form-input:focus{
+    outline: none;
+    border-color: var(--background-button-color);
+}
+.form-input:focus + .modal-icon{
+    fill: var(--background-button-color);
+}
 .modal-form{
-    padding-right: 40px;
+    padding-right: 40px;   
     padding-left: 40px;
     padding-bottom: 40px;
 }
@@ -242,9 +252,14 @@ a:hover .icon-phone{
     text-decoration: underline;
     color: var(--background-button-color);
 }
-.comment{
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
+.comment:focus {
+    outline: none;
+    border-color: var(--background-button-color);
+}
+.comment::placeholder {
+    font-size: 14px;
+    line-height: 1.14;
+    color: rgba(117, 117, 117, 0.5);
 }
 .agree-btn{
     color: var(--secondary-text-color);
@@ -262,9 +277,6 @@ a:hover .icon-phone{
 .agree-btn-wrapper{
     display: flex;
     justify-content: center;
-}
-.comment::placeholder{
-    padding: 5px;
 }
 /* benefits */
 .benefits{
