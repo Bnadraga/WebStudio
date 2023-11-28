@@ -7,6 +7,8 @@
     --background-team-color: #F5F4FA;
     --logo-color: #000;
     --secondary-background-color: #2F303A;
+    --background-color-after: #196baf;
+    --time-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 body{
     padding: 0;
@@ -41,11 +43,25 @@ body{
     display: flex;
     align-items: center;
 }
+.contact-item .site-number{
+    transition: color 250ms var(--time-function);
+}
+.contact-item .site-email{
+    transition: color 250ms var(--time-function);
+}
 .contact-list .icon-email:hover{
     fill: var(--background-button-color);
+    transition: fill 250ms var(--time-function);
 }
 .contact-list .icon-phone:hover{
     fill: var(--background-button-color);
+    transition: fill 250ms var(--time-function);
+}
+.site-number .icon-phone{
+    transition: fill 250ms var(--time-function);
+}
+.site-email .icon-email{
+    transition: fill 250ms var(--time-function);
 }
 .site-link.current::after{
     content: "";
@@ -57,6 +73,11 @@ body{
     position: absolute;
     left: 0;
     bottom: -35px;
+    transition: background-color 2000ms ease;
+}
+.site-link:hover.current::after{
+    background-color: var(--background-color-after);
+    transition: background-color 2000ms ease;
 }
 a:hover .icon-email{
     fill: var(--background-button-color);
@@ -442,6 +463,7 @@ a:hover .icon-phone{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 250ms var(--time-function), fill 250ms var(--time-function);
 }
 .team-social-a:hover,
 .team-social-a:focus{
@@ -470,36 +492,42 @@ a:hover .icon-phone{
     border-radius: 4px;
     height: 92px;
     cursor: pointer;
+    transition: border 250ms var(--time-function);
 }
 .client-list .client-wrapper:hover{
     color: var(--background-button-color);
+    transition: fill 250ms var(--time-function);
 }
 .client-wrapper:hover .icon-client_one{
     fill: var(--background-button-color);
+    transition: fill 250ms var(--time-function);
 }
 .client-wrapper:hover .icon-client_two{
     fill: var(--background-button-color);
+    transition: fill 250ms var(--time-function);
 }
 .client-wrapper:hover .icon-client_three{
     fill: var(--background-button-color);
+    transition: fill 250ms var(--time-function);
 }
 .client-wrapper:hover .icon-client_four{
     fill: var(--background-button-color);
+    transition: fill 250ms var(--time-function);
 }
 .client-wrapper:hover .icon-client_five{
     fill: var(--background-button-color);
+    transition: fill 250ms var(--time-function);
 }
 .client-wrapper:hover .icon-client_six{
     fill: var(--background-button-color);
+    transition: fill 250ms var(--time-function);
 }
 .client-svg{
     fill: var(--primary-text-color);
+    margin: 16px 32px;
 }
 .client-wrapper:hover{
     border: 1px solid var(--background-button-color);
-}
-.client-svg{
-    margin: 16px 32px;
 }
 /* footer */
 .page-footer{
@@ -566,6 +594,14 @@ a:hover .icon-phone{
     position: relative;
     cursor: pointer;
     margin-left: 12px;
+    transition: background-color 250ms var(--time-function);
+}
+.footer-email-btn:hover{
+    background-color: var(--background-color-after);
+    transition: background-color 250ms var(--time-function);
+}
+.footer-social-svg{
+    fill: var(--secondary-text-color);
 }
 .footer-information{
     display: flex;
@@ -592,11 +628,11 @@ a:hover .icon-phone{
     display: flex;
     justify-content: center;
     align-items: center;
-    fill: var(--secondary-text-color);
     background-color: rgba(255, 255, 255, 0.10);
     width: 44px;
     height: 44px;
     border-radius: 50%;
+    transition: background-color 250ms var(--time-function);
 }
 .footer-social-item:not(:last-child){
     margin-right: 10px;
@@ -681,12 +717,17 @@ a:hover .icon-phone{
     line-height: 30px;
     letter-spacing: 0.48px;
     padding-left: 24px;
+    text-decoration: none;
+    color: var(--primary-text-color);
 }
 .project-list-information{
     border: 1px solid #EEE;
     width: 370px;
     height: 404px;
     flex-basis: calc((100% - 60px) / 3);
+}
+.project-list-information:hover{
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 .project-list{
     display: flex;
