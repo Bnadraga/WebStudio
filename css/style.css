@@ -176,6 +176,11 @@ a:hover .icon-phone{
     line-height: 30px;
     letter-spacing: 0.96px;
     padding: 10px 32px;
+    transition: background-color 250ms var(--time-function);
+}
+.post-button:hover{
+    transition: background-color 250ms var(--time-function);
+    background-color: var(--background-color-after);
 }
 .div-button{
     display: flex;
