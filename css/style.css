@@ -49,14 +49,6 @@ body{
 .contact-item .site-email{
     transition: color 250ms var(--time-function);
 }
-.contact-list .icon-email:hover{
-    fill: var(--background-button-color);
-    transition: fill 250ms var(--time-function);
-}
-.contact-list .icon-phone:hover{
-    fill: var(--background-button-color);
-    transition: fill 250ms var(--time-function);
-}
 .site-number .icon-phone{
     transition: fill 250ms var(--time-function);
 }
@@ -80,10 +72,68 @@ body{
     transition: background-color 2000ms ease;
 }
 a:hover .icon-email{
-    fill: var(--background-button-color);
+    animation-name: chEmail;
+    animation-timing-function: ease;
+    animation-duration: 2000ms;
+}
+@keyframes chEmail{
+    0%{
+        fill: var(--primary-text-color);
+    }
+    50%{
+        fill: var(--background-button-color);
+    }
+    100%{
+        fill: var(--primary-text-color);
+    }
 }
 a:hover .icon-phone{
-    fill: var(--background-button-color);
+    animation-name: chPhone;
+    animation-timing-function: ease;
+    animation-duration: 2000ms;
+}
+@keyframes chPhone{
+    0%{
+        fill: var(--primary-text-color);
+    }
+    50%{
+        fill: var(--background-button-color);
+    }
+    100%{
+        fill: var(--primary-text-color);
+    }
+}
+.site-number:hover{
+    animation-name: chNumber;
+    animation-timing-function: ease;
+    animation-duration: 2000ms;
+}
+@keyframes chNumber{
+    0%{
+        color: var(--primary-text-color);
+    }
+    50%{
+        color: var(--background-button-color);
+    }
+    100%{
+        color: var(--primary-text-color);
+    }
+}
+.site-email:hover{
+    animation-name: chMail;
+    animation-timing-function: ease;
+    animation-duration: 2000ms;
+}
+@keyframes chMail{
+    0%{
+        color: var(--primary-text-color);
+    }
+    50%{
+        color: var(--background-button-color);
+    }
+    100%{
+        color: var(--primary-text-color);
+    }
 }
 .header-wrapper{
     display: flex;
@@ -107,16 +157,8 @@ a:hover .icon-phone{
     color: var(--primary-text-color);
     margin-top: -2px;
 }
-.site-number:hover,
-.site-number:focus{
-    color: var(--background-button-color);
-}
 .site-email{
     color: var(--primary-text-color);
-}
-.site-email:hover,
-.site-email:focus{
-    color: var(--background-button-color);
 }
 .blue{
     color: var(--background-button-color);
@@ -470,10 +512,40 @@ a:hover .icon-phone{
     align-items: center;
     transition: background-color 250ms var(--time-function), fill 250ms var(--time-function);
 }
-.team-social-a:hover,
-.team-social-a:focus{
-    background-color: var(--background-button-color);
-    fill: var(--primary-background-color);
+.team-social-a:hover{
+    animation-name: chTeam;
+    animation-timing-function: ease;
+    animation-duration: 1500ms;
+}
+@keyframes chTeam{
+    0%{
+        background-color: var(--secondary-text-color);
+    }
+    50%{
+        background-color: var(--background-button-color);
+    }
+    100%{
+        background-color: var(--secondary-text-color);
+    }
+}
+.team-svg{
+    fill: var(--primary-text-color);
+}
+.team-social-a:hover .team-svg{
+    animation-name: chTeamsvg;
+    animation-duration: 1500ms;
+    animation-timing-function: ease;
+}
+@keyframes chTeamsvg{
+    0%{
+        fill: var(--primary-text-color);
+    }
+    50%{
+        fill: var(--secondary-text-color);
+    }
+    100%{
+        fill: var(--primary-text-color);
+    }
 }
 /* client */
 .client{
@@ -499,40 +571,42 @@ a:hover .icon-phone{
     cursor: pointer;
     transition: border 250ms var(--time-function);
 }
-.client-list .client-wrapper:hover{
-    color: var(--background-button-color);
-    transition: fill 250ms var(--time-function);
+.client-wrapper:hover .client-svg{
+    animation-name: chClientsvg;
+    animation-timing-function: ease;
+    animation-duration: 1500ms;
 }
-.client-wrapper:hover .icon-client_one{
-    fill: var(--background-button-color);
-    transition: fill 250ms var(--time-function);
-}
-.client-wrapper:hover .icon-client_two{
-    fill: var(--background-button-color);
-    transition: fill 250ms var(--time-function);
-}
-.client-wrapper:hover .icon-client_three{
-    fill: var(--background-button-color);
-    transition: fill 250ms var(--time-function);
-}
-.client-wrapper:hover .icon-client_four{
-    fill: var(--background-button-color);
-    transition: fill 250ms var(--time-function);
-}
-.client-wrapper:hover .icon-client_five{
-    fill: var(--background-button-color);
-    transition: fill 250ms var(--time-function);
-}
-.client-wrapper:hover .icon-client_six{
-    fill: var(--background-button-color);
-    transition: fill 250ms var(--time-function);
+@keyframes chClientsvg{
+    0%{
+        fill: var(--primary-text-color);
+    }
+    50%{
+        fill: var(--background-button-color);
+    }
+    100%{
+        fill: var(--primary-text-color);
+    }
 }
 .client-svg{
     fill: var(--primary-text-color);
     margin: 16px 32px;
 }
 .client-wrapper:hover{
-    border: 1px solid var(--background-button-color);
+    transition: border 250ms var(--time-function);
+    animation-name: chClienborder;
+    animation-timing-function: ease;
+    animation-duration: 1500ms;
+}
+@keyframes chClienborder{
+    0%{
+        border: 1px solid #AFB1B8;
+    }
+    50%{
+        border: 1px solid var(--background-button-color);
+    }
+    100%{
+        border: 1px solid #AFB1B8;
+    }
 }
 /* footer */
 .page-footer{
@@ -639,11 +713,24 @@ a:hover .icon-phone{
     border-radius: 50%;
     transition: background-color 250ms var(--time-function);
 }
+.footer-svg:hover{
+    animation-name: chFootersvg;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1500ms;
+}
+@keyframes chFootersvg{
+    0%{
+        background-color: rgba(255, 255, 255, 0.10);
+    }
+    50%{
+        background-color: var(--background-button-color);
+    }
+    100%{
+        background-color: rgba(255, 255, 255, 0.10);
+    }
+}
 .footer-social-item:not(:last-child){
     margin-right: 10px;
-}
-.footer-svg:hover{
-    background-color: var(--background-button-color);
 }
 .logo-footer{
     color: var(--logo-color);
